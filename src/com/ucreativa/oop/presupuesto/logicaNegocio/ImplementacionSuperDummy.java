@@ -2,7 +2,7 @@ package com.ucreativa.oop.presupuesto.logicaNegocio;
 
 import com.ucreativa.oop.presupuesto.entidades.Movimiento;
 
-public class ImplementacionSuperDummy implements InterfaceRegistro {
+public class ImplementacionSuperDummy implements InterfaceRegistro, InterfaceReportes {
     @Override
     public void getMovimiento() {
         System.out.println("No haga nada.");
@@ -20,6 +20,11 @@ public class ImplementacionSuperDummy implements InterfaceRegistro {
 
     @Override
     public void getGastos() {
+        System.out.println("No haga nada.");
+    }
+
+    @Override
+    public void ImprimirReporte() {
         System.out.println("No haga nada.");
     }
 }

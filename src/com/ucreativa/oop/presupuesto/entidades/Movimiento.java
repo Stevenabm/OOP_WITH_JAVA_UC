@@ -2,7 +2,7 @@ package com.ucreativa.oop.presupuesto.entidades;
 
 import java.util.Date;
 
-public class Movimiento {
+public abstract class Movimiento {
     private String nombre;
     private String moneda;
     private String categoria;
@@ -17,7 +17,26 @@ public class Movimiento {
         this.fecha = new Date();
     }
 
-    public String getNombre(){
+    String getNombre(){
         return this.nombre;
     }
+
+    String getMoneda(){
+        return this.moneda;
+    }
+
+    String getCategoria(){
+        return this.moneda;
+    }
+
+    int getMonto(){
+        return this.monto;
+    }
+
+    Date getFecha(){
+        return this.fecha;
+    }
+
+    public abstract String getDetails();
+
 }

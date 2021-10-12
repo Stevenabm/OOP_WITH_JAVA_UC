@@ -13,4 +13,14 @@ public class Ingreso extends Movimiento {
     public String getNombre(){
         return super.getNombre() + " " + this.periodicidad;
     }
+
+    @Override
+    public String getDetails() {
+        return "GASTO: " + this.getNombre() + " - " +
+                this.getMoneda() + " - " +
+                this.getCategoria() + " - " +
+                this.getMonto() + " - " +
+                this.periodicidad;
+    }
+
 }

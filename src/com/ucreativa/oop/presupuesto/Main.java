@@ -3,12 +3,15 @@ package com.ucreativa.oop.presupuesto;
 import com.ucreativa.oop.presupuesto.logicaNegocio.ImplementacionRegistro;
 import com.ucreativa.oop.presupuesto.logicaNegocio.ImplementacionSuperDummy;
 import com.ucreativa.oop.presupuesto.logicaNegocio.InterfaceRegistro;
+import com.ucreativa.oop.presupuesto.ui.FrontEnd;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args)
     {
+        FrontEnd fe = new FrontEnd("Sistema Registro de Movimientos");
+        fe.build();
         /*
         Gasto gastoLuz = new Gasto(
         "Luz",
@@ -23,7 +26,7 @@ public class Main {
         30000);
 */
 
-        System.out.println("Sistema Registro de Movimientos");
+/*        System.out.println("Sistema Registro de Movimientos");
         Scanner consola = new Scanner(System.in);
 
 
@@ -68,7 +71,7 @@ public class Main {
 
         System.out.println("Quiere seguir?('s')");
         siga = consola.nextLine().equals("s");
-    }
+    }*/
 
 
         /*
