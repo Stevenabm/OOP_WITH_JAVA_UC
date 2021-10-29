@@ -1,6 +1,7 @@
 package com.ucreativa.oop.presupuesto.ui;
 
 import com.ucreativa.oop.presupuesto.logicaNegocio.ImplementacionRegistro;
+import com.ucreativa.oop.presupuesto.logicaNegocio.ImplementacionRegistroEnArchivo;
 import com.ucreativa.oop.presupuesto.logicaNegocio.InterfaceRegistro;
 
 import javax.swing.*;
@@ -43,7 +44,7 @@ public class FrontEnd extends JFrame {
 
         JButton salvar = new JButton("Salvar");
         JButton reporte = new JButton("Reporte");
-        InterfaceRegistro registro = new ImplementacionRegistro();
+        InterfaceRegistro registro = new ImplementacionRegistroEnArchivo();
         salvar.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
